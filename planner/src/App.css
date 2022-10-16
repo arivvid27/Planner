@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+h3 {
+  color: #77ABB7;
+}
+
+.App-header {
+  background-color: #1D3E53;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background: rgb(29,62,83);
+  background: linear-gradient(0deg, rgba(29,62,83,1) 0%, rgba(49,85,103,1) 79%, rgba(71,109,124,1) 100%);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
