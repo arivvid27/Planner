@@ -1,5 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
+import LabTabs from './Components/Navbar/Navbar.jsx'
+
 
 function App() {
   return (
