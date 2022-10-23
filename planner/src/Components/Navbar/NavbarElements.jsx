@@ -7,9 +7,10 @@ export const Nav = styled.nav`
 height: 85px;
 display: flex;
 justify-content: space-between;
-padding: 0.2rem calc((100vw - 1000px) / 2);
+padding: 0.2rem calc((20vw - 100px) / 2);
+padding-right: 60rem;
 z-index: 12;
-background-color: #476d7c;
+
     /* border-top: 3px solid #ccc;
     border-bottom: 3px solid #ccc; */
 /* Third Nav */
@@ -17,8 +18,11 @@ background-color: #476d7c;
 `;
 
 export const NavLink = styled(Link)`
+display: flex;
+align-items: center;
 border-radius: 4px;
 padding: 10px 22px;
+margin-right: 24px;
 color: #000000;
 outline: none;
 border: none;
@@ -92,12 +96,23 @@ white-space: nowrap; */
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
+border-radius: 4px;
+padding: 10px 22px;
 margin-right: 24px;
 /* Third Nav */
 /* justify-content: flex-end;
 width: 100vw; */
 @media screen and (max-width: 768px) {
 	display: none;
+}
+&:hover {
+	transition: all 0.2s ease-in-out;
+	background: #254B62;
+	color: #fff;
+}
+&.active {
+	background: #254B62;
+	color: #fff;
 }
 `;
 

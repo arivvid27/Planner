@@ -4,24 +4,28 @@ Nav,
 NavLink,
 Bars,
 NavMenu,
-NavBtn,
-NavBtnLink,
 } from './NavbarElements';
+import "./Navbar.css"
+
+import logo from './logo.png'
 
 const Navbar = () => {
 return (
 	<Nav>
+		<div className='navImg'>
+			<img src={logo} width="90" height="90" alt="logo"></img>
+		</div>
 		<Bars />
 		<NavMenu>
-    <NavLink to='/' activeStyle>
+        <NavLink to='/home' activeStyle>
 			Home
 		</NavLink>
-		{/* <NavLink to='/about' activeStyle>
-			About
+		<NavLink to='/data' activeStyle>
+			Data
 		</NavLink>
-		<NavLink to='/browse' activeStyle>
-			Manage
-		</NavLink> */}
+		<NavLink to='/charts' activeStyle>
+			Charts
+		</NavLink>
 		</NavMenu>
 		{/* <NavBtn>
 		<NavBtnLink to='/signin'>
